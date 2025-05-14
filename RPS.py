@@ -1,6 +1,6 @@
 import random
 
-def player(prev_play, opponent_history=[], player_history=[], model_opponent={}, model_player={}, x=14, min_occurrence=3, decay_factor=0.995, confidence_threshold=0.60):
+def player(prev_play, opponent_history=[], player_history=[], model_opponent={}, model_player={}, x=14, min_occurrence=3, decay_factor=0.99, confidence_threshold=0.60):
     valid_moves = {"R", "P", "S"}
 
     # Append opponent's move to history
